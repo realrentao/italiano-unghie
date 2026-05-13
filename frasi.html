@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>万能句型 · Frasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Outfit', 'Noto Sans SC', sans-serif; background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); min-height: 100vh; color: #2c2c2c; }
+    .back-btn { position: fixed; top: 20px; left: 20px; background: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 14px; color: #666; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-decoration: none; z-index: 100; transition: all 0.3s; }
+    .back-btn:hover { background: #ff9800; color: white; }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 20px 40px; }
+    h1 { font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: #666; margin-bottom: 30px; }
+    .section { background: white; border-radius: 16px; padding: 24px; margin-bottom: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .section h2 { font-size: 18px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid; }
+    .section.green h2 { color: #4caf50; border-color: #c8e6c9; }
+    .section.yellow h2 { color: #ffc107; border-color: #fff9c4; }
+    .section.orange h2 { color: #ff9800; border-color: #ffe0b2; }
+    .section.red h2 { color: #f44336; border-color: #ffcdd2; }
+    .section.blue h2 { color: #2196f3; border-color: #bbdefb; }
+    .section.purple h2 { color: #9c27b0; border-color: #e1bee7; }
+    .section.pink h2 { color: #e91e63; border-color: #f8bbd0; }
+    .frasi { display: flex; flex-direction: column; gap: 10px; }
+    .frase { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #f9f9f9; border-radius: 8px; }
+    .frase-it { font-weight: 600; color: #2c2c2c; }
+    .frase-zh { color: #888; font-size: 14px; }
+    @media (max-width: 600px) { .container { padding: 70px 16px 30px; } .frase { flex-direction: column; align-items: flex-start; gap: 4px; } }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-btn">← 返回主页</a>
+  <div class="container">
+    <h1>⚡ 万能句型</h1>
+    <p class="subtitle">Frasi utili · 不用背语法，直接拿去用！</p>
+
+    <div class="section green">
+      <h2>🟢 顾客进门 / 开始服务</h2>
+      <div class="frasi">
+        <div class="frase"><span class="frase-it">Buongiorno! Si accomodi</span><span class="frase-zh">您好！请坐</span></div>
+        <div class="frase"><span class="frase-it">Allora, cosa facciamo oggi?</span><span class="frase-zh">那今天做什么？</span></div>
+        <div class="frase"><span class="frase-it">Ha l'appuntamento?</span><span class="frase-zh">有预约吗？</span></div>
+        <div class="frase"><span class="frase-it">Mi faccia vedere le mani</span><span class="frase-zh">让我看看您的手</span></div>
+        <div class="frase"><span class="frase-it">Perfetto! Cominciamo</span><span class="frase-zh">完美！开始吧</span></div>
+      </div>
+    </div>
+
+    <div class="section yellow">
+      <h2>🟡 判断甲质 + 沟通需求</h2>
+      <div class="frasi">
+        <div class="frase"><span class="frase-it">Le Sue unghie sono un po' deboli</span><span class="frase-zh">您的指甲有点脆</span></div>
+        <div class="frase"><span class="frase-it">Le unghie sono molto rovinate</span><span class="frase-zh">指甲受损很严重</span></div>
+        <div class="frase"><span class="frase-it">Che forma desidera?</span><span class="frase-zh">您想要什么形状？</span></div>
+        <div class="frase"><span class="frase-it">Quanto lunghe le vuole?</span><span class="frase-zh">要多长？</span></div>
+        <div class="frase"><span class="frase-it">Che colore ha in mente?</span><span class="frase-zh">想做什么颜色？</span></div>
+        <div class="frase"><span class="frase-it">Top lucido o opaco?</span><span class="frase-zh">亮面封层还是哑光？</span></div>
+        <div class="frase"><span class="frase-it">Vuole aggiungere un nail art?</span><span class="frase-zh">要加彩绘吗？</span></div>
+        <div class="frase"><span class="frase-it">Così va bene?</span><span class="frase-zh">这样可以吗？</span></div>
+      </div>
+    </div>
+
+    <div class="section orange">
+      <h2>🟠 给出建议</h2>
+      <div class="frasi">
+        <div class="frase"><span class="frase-it">Le consiglio questo nude</span><span class="frase-zh">我推荐这款裸色</span></div>
+        <div class="frase"><span class="frase-it">Le consiglio di aspettare</span><span class="frase-zh">我建议您等一等</span></div>
+        <div class="frase"><span class="frase-it">Con la ricostruzione durano di più</span><span class="frase-zh">做延长更持久</span></div>
+        <div class="frase"><span class="frase-it">Possiamo fare una cosa più leggera</span><span class="frase-zh">我们可以做个温和点的</span></div>
+        <div class="frase"><span class="frase-it">Le sta benissimo con la Sua carnagione</span><span class="frase-zh">跟您的肤色超级配</span></div>
+        <div class="frase"><span class="frase-it">Meglio non fare la ricostruzione adesso</span><span class="frase-zh">最好现在不做延长</span></div>
+      </div>
+    </div>
+
+    <div class="section red">
+      <h2>🔴 危机处理（保命必背！）</h2>
+      <div class="frasi">
+        <div class="frase"><span class="frase-it">Mi dispiace tanto.</span><span class="frase-zh">非常抱歉</span></div>
+        <div class="frase"><span class="frase-it">Cosa possiamo fare?</span><span class="frase-zh">我们能做什么？</span></div>
+        <div class="frase"><span class="frase-it">Possiamo aggiustare un po'</span><span class="frase-zh">我们可以调整一下</span></div>
+        <div class="frase"><span class="frase-it">Possiamo rifare</span><span class="frase-zh">我们可以重做</span></div>
+        <div class="frase"><span class="frase-it">Non posso continuare, mi dispiace</span><span class="frase-zh">我不能继续，抱歉</span></div>
+        <div class="frase"><span class="frase-it">Si figuri! L'importante è che Lei sia contenta</span><span class="frase-zh">没关系！重要的是您满意</span></div>
+        <div class="frase"><span class="frase-it">È importante non strappare l'unghia</span><span class="frase-zh">千万别硬撕指甲</span></div>
+        <div class="frase"><span class="frase-it">Le fa male? Qui?</span><span class="frase-zh">您疼吗？这里？</span></div>
+      </div>
+    </div>
+
+    <div class="section purple">
+      <h2>🟣 做甲流程常用句</h2>
+      <div class="frasi">
+        <div class="frase"><span class="frase-it">Prima leviamo lo smalto vecchio</span><span class="frase-zh">先卸旧甲油</span></div>
+        <div class="frase"><span class="frase-it">Le spingo le cuticole</span><span class="frase-zh">帮您推死皮</span></div>
+        <div class="frase"><span class="frase-it">Le taglio un po' le cuticole</span><span class="frase-zh">剪一点死皮</span></div>
+        <div class="frase"><span class="frase-it">Applichiamo la base</span><span class="frase-zh">打底</span></div>
+        <div class="frase"><span class="frase-it">Mettiamo sotto la lampada per 60 secondi</span><span class="frase-zh">灯里烤60秒</span></div>
+        <div class="frase"><span class="frase-it">Per finire, il top coat</span><span class="frase-zh">最后封层</span></div>
+      </div>
+    </div>
+
+    <div class="section pink">
+      <h2>🩷 夸顾客（ Italians love compliments! ）</h2>
+      <div class="frasi">
+        <div class="frase"><span class="frase-it">Le sta benissimo!</span><span class="frase-zh">超级适合您！</span></div>
+        <div class="frase"><span class="frase-it">Ha delle belle mani!</span><span class="frase-zh">您的手很好看！</span></div>
+        <div class="frase"><span class="frase-it">Che bel colore!</span><span class="frase-zh">颜色真好看！</span></div>
+        <div class="frase"><span class="frase-it">Ottima scelta!</span><span class="frase-zh">很好的选择！</span></div>
+      </div>
+    </div>
+
+    <div class="section blue">
+      <h2>💳 结账送客</h2>
+      <div class="frasi">
+        <div class="frase"><span class="frase-it">Ecco fatto! Le piace?</span><span class="frase-zh">好了！您喜欢吗？</span></div>
+        <div class="frase"><span class="frase-it">Il totale è [35] euro</span><span class="frase-zh">一共35欧</span></div>
+        <div class="frase"><span class="frase-it">Accettiamo carta e contanti</span><span class="frase-zh">刷卡和现金都可以</span></div>
+        <div class="frase"><span class="frase-it">Ecco lo scontrino</span><span class="frase-zh">这是小票</span></div>
+        <div class="frase"><span class="frase-it">Una firma qui, per favore</span><span class="frase-zh">请在这里签名</span></div>
+        <div class="frase"><span class="frase-it">Quando vuole il prossimo appuntamento?</span><span class="frase-zh">下次想约什么时候？</span></div>
+        <div class="frase"><span class="frase-it">Grazie a Lei! Buona giornata!</span><span class="frase-zh">谢谢您！祝您愉快！</span></div>
+        <div class="frase"><span class="frase-it">A presto!</span><span class="frase-zh">下次见！</span></div>
+        <div class="frase"><span class="frase-it">ArrivederLa!</span><span class="frase-zh">再见！</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
