@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美甲艺术与服务 · Nail Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Outfit', 'Noto Sans SC', sans-serif; background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); min-height: 100vh; color: #2c2c2c; }
+    .back-btn { position: fixed; top: 20px; left: 20px; background: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 14px; color: #666; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-decoration: none; z-index: 100; transition: all 0.3s; }
+    .back-btn:hover { background: #673ab7; color: white; }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 20px 40px; }
+    h1 { font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: #666; margin-bottom: 30px; }
+    .vocab-list { background: white; border-radius: 16px; padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .vocab-list h2 { color: #673ab7; margin-bottom: 16px; font-size: 18px; }
+    .vocab-item { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+    .vocab-item:last-child { border-bottom: none; }
+    .vocab-it { font-weight: 600; color: #2c2c2c; }
+    .vocab-zh { color: #888; }
+    .tip { background: #ede7f6; border-radius: 12px; padding: 16px; margin-top: 20px; }
+    .tip-title { font-weight: 600; color: #673ab7; margin-bottom: 8px; }
+    .tip p { font-size: 14px; color: #666; line-height: 1.7; }
+    .dialogue { background: white; border-radius: 16px; padding: 24px; margin-top: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .dialogue h2 { color: #673ab7; margin-bottom: 16px; }
+    .dlg-item { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed #eee; }
+    .dlg-item:last-child { border-bottom: none; margin-bottom: 0; }
+    .dlg-role { font-size: 12px; font-weight: 600; color: #888; margin-bottom: 4px; }
+    .dlg-it { font-weight: 600; color: #2c2c2c; margin-bottom: 2px; }
+    .dlg-zh { font-size: 14px; color: #666; }
+    @media (max-width: 600px) { .container { padding: 70px 16px 30px; } }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-btn">← 返回主页</a>
+  <div class="container">
+    <h1>✨ 美甲艺术与服务</h1>
+    <p class="subtitle">Nail art e servizi · 延长甲 · 半永久 · 法式 · 足部美甲</p>
+
+    <div class="vocab-list">
+      <h2>💅 延长甲服务</h2>
+      <div class="vocab-item"><span class="vocab-it">La ricostruzione</span><span class="vocab-zh">延长/建构</span></div>
+      <div class="vocab-item"><span class="vocab-it">La ricostruzione in gel</span><span class="vocab-zh">凝胶延长</span></div>
+      <div class="vocab-item"><span class="vocab-it">Le unghie in acrilico</span><span class="vocab-zh">亚克力指甲</span></div>
+      <div class="vocab-item"><span class="vocab-it">Il gel costruttore</span><span class="vocab-zh">建构胶/延长胶</span></div>
+      <div class="vocab-item"><span class="vocab-it">Il refill / La ricarica</span><span class="vocab-zh">补甲（补长）</span></div>
+      <div class="vocab-item"><span class="vocab-it">La base</span><span class="vocab-zh">底油/底胶</span></div>
+      <div class="vocab-item"><span class="vocab-it">Il top coat</span><span class="vocab-zh">封层/亮油</span></div>
+      <div class="vocab-item"><span class="vocab-it">Il gel colorato</span><span class="vocab-zh">彩色胶</span></div>
+    </div>
+
+    <div class="vocab-list">
+      <h2>🎨 彩绘与装饰</h2>
+      <div class="vocab-item"><span class="vocab-it">La nail art</span><span class="vocab-zh">美甲艺术/指甲彩绘</span></div>
+      <div class="vocab-item"><span class="vocab-it">La decorazione</span><span class="vocab-zh">装饰/钻饰</span></div>
+      <div class="vocab-item"><span class="vocab-it">Le strass</span><span class="vocab-zh">水钻</span></div>
+      <div class="vocab-item"><span class="vocab-it">I brillantini</span><span class="vocab-zh">闪粉/亮片</span></div>
+      <div class="vocab-item"><span class="vocab-it">I fiori</span><span class="vocab-zh">花朵图案</span></div>
+      <div class="vocab-item"><span class="vocab-it">I caratteri</span><span class="vocab-zh">字母图案</span></div>
+      <div class="vocab-item"><span class="vocab-it">Il pennello da nail art</span><span class="vocab-zh">彩绘笔</span></div>
+    </div>
+
+    <div class="vocab-list">
+      <h2>🦶 足部美甲服务</h2>
+      <div class="vocab-item"><span class="vocab-it">La pedicura</span><span class="vocab-zh">足部美甲</span></div>
+      <div class="vocab-item"><span class="vocab-it">Il pediluvio</span><span class="vocab-zh">足浴</span></div>
+      <div class="vocab-item"><span class="vocab-it">Levare le callosità</span><span class="vocab-zh">去角质/去老茧</span></div>
+      <div class="vocab-item"><span class="vocab-it">Il trattamento paraffina</span><span class="vocab-zh">石蜡护理</span></div>
+      <div class="vocab-item"><span class="vocab-it">Il massaggio ai piedi</span><span class="vocab-zh">足部按摩</span></div>
+      <div class="vocab-item"><span class="vocab-it">La ceretta alle gambe</span><span class="vocab-zh">腿部脱毛</span></div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-title">💡 服务流程三步法</div>
+      <p>• <strong>Prima</strong>（先）：leviamo lo smalto vecchio → 卸旧甲油<br>
+      • <strong>Poi</strong>（再）：applichiamo la base e il colore → 打底+上色<br>
+      • <strong>Per finire</strong>（最后）：il top coat → 封层收尾</p>
+      <p style="margin-top:8px;">口语化表达：<strong>Prima la base, poi il colore, per finire il top coat.</strong></p>
+    </div>
+
+    <div class="dialogue">
+      <h2>💬 延长甲咨询对话</h2>
+      <div class="dlg-item">
+        <div class="dlg-role">👩 顾客</div>
+        <div class="dlg-it">Buongiorno! Vorrei allungare le unghie.</div>
+        <div class="dlg-zh">您好！我想延长指甲</div>
+      </div>
+      <div class="dlg-item">
+        <div class="dlg-role">💅 美甲师</div>
+        <div class="dlg-it">Che forma desidera? Mandorla, quadrata o ovale?</div>
+        <div class="dlg-zh">您想要什么形状？杏仁形、方形还是椭圆？</div>
+      </div>
+      <div class="dlg-item">
+        <div class="dlg-role">👩 顾客</div>
+        <div class="dlg-it">La forma mandorla, con il gel.</div>
+        <div class="dlg-zh">杏仁形，用凝胶</div>
+      </div>
+      <div class="dlg-item">
+        <div class="dlg-role">💅 美甲师</div>
+        <div class="dlg-it">Le Sue unghie naturali sono corte, faremo la ricostruzione in gel.</div>
+        <div class="dlg-zh">您的本甲很短，我们做凝胶延长</div>
+      </div>
+      <div class="dlg-item">
+        <div class="dlg-role">💅 美甲师</div>
+        <div class="dlg-it">Quanto lunghe le vuole? Fino a qui?</div>
+        <div class="dlg-zh">要多长？到这儿？（用手比划）</div>
+      </div>
+      <div class="dlg-item">
+        <div class="dlg-role">💅 美甲师</div>
+        <div class="dlg-it">Con la ricostruzione in gel durano di più. Circa 3-4 settimane.</div>
+        <div class="dlg-zh">做凝胶延长更持久，大约3-4周</div>
+      </div>
+      <div class="dlg-item">
+        <div class="dlg-role">💅 美甲师</div>
+        <div class="dlg-it">Vuole aggiungere un nail art? Con qualche strass o decorazione?</div>
+        <div class="dlg-zh">要加彩绘吗？加些水钻或装饰？</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
