@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实战小抄 · Sommario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Outfit', 'Noto Sans SC', sans-serif; background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); min-height: 100vh; color: #2c2c2c; }
+    .back-btn { position: fixed; top: 20px; left: 20px; background: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 14px; color: #666; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-decoration: none; z-index: 100; transition: all 0.3s; }
+    .back-btn:hover { background: #4caf50; color: white; }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 20px 40px; }
+    h1 { font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: #666; margin-bottom: 30px; }
+    .card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .card h2 { color: #4caf50; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .gold { border-left: 4px solid #ffd700; }
+    .silver { border-left: 4px solid #c0c0c0; }
+    .bronze { border-left: 4px solid #cd7f32; }
+    .formula { background: #f5f5f5; border-radius: 8px; padding: 16px; margin-bottom: 12px; font-family: monospace; font-size: 15px; }
+    .formula strong { color: #4caf50; }
+    .list { display: flex; flex-direction: column; gap: 8px; }
+    .list-item { padding: 12px 16px; background: #f9f9f9; border-radius: 8px; }
+    .list-item strong { color: #2c2c2c; }
+    .tip { background: #e8f5e9; border-radius: 12px; padding: 16px; margin-top: 20px; }
+    .tip-title { font-weight: 600; color: #2e7d32; margin-bottom: 8px; }
+    .tip p { font-size: 14px; color: #666; line-height: 1.7; }
+    .crisis { background: #fff3e0; border-radius: 12px; padding: 16px; margin-top: 20px; }
+    .crisis-title { font-weight: 600; color: #e65100; margin-bottom: 8px; }
+    .crisis p { font-size: 14px; color: #666; line-height: 1.7; }
+    @media (max-width: 600px) { .container { padding: 70px 16px 30px; } }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-btn">← 返回主页</a>
+  <div class="container">
+    <h1>🏆 实战小抄</h1>
+    <p class="subtitle">三连招速记 · 记住这三段就够了</p>
+
+    <div class="card gold">
+      <h2>🥇 第一招：判断甲质</h2>
+      <div class="formula">
+        <strong>💅</strong> Le Sue unghie sono <strong>[deboli / sottili / rovinate]</strong><br>
+        您的指甲是 [脆的 / 薄的 / 受损的]
+      </div>
+      <div class="formula">
+        <strong>💅</strong> Mi faccia vedere le mani.<br>
+        让我看看您的手。
+      </div>
+      <div class="formula">
+        <strong>💅</strong> Allora, cosa facciamo oggi?<br>
+        那今天做什么？
+      </div>
+    </div>
+
+    <div class="card silver">
+      <h2>🥈 第二招：说建议</h2>
+      <div class="list">
+        <div class="list-item"><strong>Le consiglio questo nude o questo rosa cipria</strong><br><span style="color:#888">我推荐这款裸色或这款豆沙粉</span></div>
+        <div class="list-item"><strong>Con la ricostruzione in gel durano di più</strong><br><span style="color:#888">做凝胶延长更持久</span></div>
+        <div class="list-item"><strong>Le sta benissimo con la Sua carnagione</strong><br><span style="color:#888">跟您的肤色超级配</span></div>
+        <div class="list-item"><strong>Prima la base, poi il colore, per finire il top coat</strong><br><span style="color:#888">先打底，再上色，最后封层</span></div>
+        <div class="list-item"><strong>Le consiglio quest'olio per cuticole</strong><br><span style="color:#888">我推荐这款死皮油</span></div>
+      </div>
+    </div>
+
+    <div class="card bronze">
+      <h2>🥉 第三招：确认和告别</h2>
+      <div class="list">
+        <div class="list-item"><strong>Ecco fatto! Le piace?</strong> — 好了！您满意吗？</div>
+        <div class="list-item"><strong>Il totale è XX euro</strong> — 一共XX欧</div>
+        <div class="list-item"><strong>Quando vuole il prossimo appuntamento?</strong> — 下次约什么时候？</div>
+        <div class="list-item"><strong>In omaggio, le do una lima gratis!</strong> — 赠您一把锉！</div>
+        <div class="list-item"><strong>Grazie a Lei!</strong> — 谢谢您！</div>
+        <div class="list-item"><strong>Buona giornata!</strong> — 祝您愉快！</div>
+        <div class="list-item"><strong>A presto!</strong> — 下次见！</div>
+        <div class="list-item"><strong>ArrivederLa!</strong> — 再见！</div>
+      </div>
+    </div>
+
+    <div class="crisis">
+      <div class="crisis-title">🚨 危机处理4步法（保命用！）</div>
+      <div class="formula">
+        <strong>① 道歉</strong> → Mi dispiace tanto.（非常抱歉。）<br>
+        <strong>② 询问</strong> → Cosa possiamo fare?（我们能做什么？）<br>
+        <strong>③ 补救</strong> → Possiamo aggiustare un po'.（我们可以调整。）<br>
+        <strong>④ 确认</strong> → Le piace di più così?（您更喜欢这样吗？）
+      </div>
+      <p><strong>如果甲质太差不能做：</strong></p>
+      <div class="formula">
+        Non posso fare, mi dispiace. → 我做不了，抱歉<br>
+        Le consiglio di aspettare almeno due settimane. → 建议至少等两周<br>
+        Possiamo fare una manicure curativa. → 可以做护理型修甲
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-title">💡 贴心提示</div>
+      <p>• 不会说长的就说短的！<strong>Sì / No / Va bene / Così?</strong> 四个词走天下<br>
+      • 顾客说了一大堆没听懂？微笑说 <strong>"Sì, certo"</strong>（是的，当然）<br>
+      • 实在听不懂？掏出手机翻译！说 <strong>"Un momento"</strong>（等一下）<br>
+      • 夸顾客永远没错：<strong>"Le sta benissimo!"</strong>（超级适合您！）<br>
+      • <strong>"Che bel colore!"</strong>（颜色真好看！）<br>
+      • <strong>"Ha delle belle mani!"</strong>（您的手很好看！）<br>
+      • 不满意别硬杠：道歉→询问→补救→确认，4步走！<br>
+      • 意大利人把美容店当社交场所，全程不说话 = 冷漠！<br>
+      • 聊天气万能句：<strong>"Che tempo fa? Fa bel tempo!"</strong></p>
+    </div>
+  </div>
+</body>
+</html>
