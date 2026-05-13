@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>语法速成 · Grammatica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Outfit', 'Noto Sans SC', sans-serif; background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); min-height: 100vh; color: #2c2c2c; }
+    .back-btn { position: fixed; top: 20px; left: 20px; background: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 14px; color: #666; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-decoration: none; z-index: 100; transition: all 0.3s; }
+    .back-btn:hover { background: #009688; color: white; }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 20px 40px; }
+    h1 { font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: #666; margin-bottom: 30px; }
+    h2 { font-size: 20px; color: #009688; margin: 30px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #b2dfdb; }
+    .table { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 16px; }
+    .table-header { background: #009688; color: white; padding: 12px 16px; font-weight: 600; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; font-size: 14px; }
+    .table-row { padding: 12px 16px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; border-bottom: 1px solid #eee; font-size: 14px; }
+    .table-row:last-child { border-bottom: none; }
+    .table-row:nth-child(even) { background: #f9f9f9; }
+    .table-row span:first-child { font-weight: 600; }
+    .tip { background: #e0f2f1; border-radius: 12px; padding: 16px; margin-top: 20px; }
+    .tip-title { font-weight: 600; color: #00796b; margin-bottom: 8px; }
+    .tip p { font-size: 14px; color: #666; line-height: 1.8; }
+    .formula { background: #fff; border-radius: 8px; padding: 16px; margin: 12px 0; font-family: monospace; font-size: 15px; }
+    @media (max-width: 600px) { .container { padding: 70px 16px 30px; } .table-header, .table-row { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-btn">← 返回主页</a>
+  <div class="container">
+    <h1>📝 语法速成</h1>
+    <p class="subtitle">Grammatica essentials · 美甲师专用精简语法</p>
+
+    <h2>🎯 动词变位6剑客</h2>
+    <div class="table">
+      <div class="table-header"><span>动词</span><span>Io</span><span>Lei (您)</span><span>Noi</span></div>
+      <div class="table-row"><span>Essere (是)</span><span>Sono</span><span>È</span><span>Siamo</span></div>
+      <div class="table-row"><span>Avere (有)</span><span>Ho</span><span>Ha</span><span>Abbiamo</span></div>
+      <div class="table-row"><span>Fare (做)</span><span>Faccio</span><span>Fa</span><span>Facciamo</span></div>
+      <div class="table-row"><span>Potere (能)</span><span>Posso</span><span>Può</span><span>Possiamo</span></div>
+      <div class="table-row"><span>Volere (想要)</span><span>Voglio</span><span>Vuole</span><span>Vogliamo</span></div>
+      <div class="table-row"><span>Dovere (必须)</span><span>Devo</span><span>Deve</span><span>Dobbiamo</span></div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-title">🧠 记忆口诀</div>
+      <p>跟顾客说话都套 <strong>Lei（您）</strong> 那一列！<br>
+      <strong>Sono / Ho / È / Ha / Fa / Può</strong> 先用熟这6个！<br>
+      美甲师最常用的句型：<strong>Le Sue unghie sono deboli</strong>（您的指甲很脆）</p>
+    </div>
+
+    <h2>❌ 否定：Non + 动词</h2>
+    <div class="table">
+      <div class="table-header"><span>意大利语</span><span>中文</span></div>
+      <div class="table-row"><span>Non posso fare</span><span>我不能做</span></div>
+      <div class="table-row"><span>Non mi piace</span><span>我不喜欢</span></div>
+      <div class="table-row"><span>Non lo so</span><span>我不知道</span></div>
+      <div class="table-row"><span>Non si può fare</span><span>做不了</span></div>
+      <div class="table-row"><span>Non posso continuare</span><span>我不能继续</span></div>
+      <div class="table-row"><span>Non troppo lunghe</span><span>不要太长</span></div>
+    </div>
+
+    <h2>❓ 疑问词速查</h2>
+    <div class="table">
+      <div class="table-header"><span>疑问词</span><span>意思</span><span>美甲师用法示例</span></div>
+      <div class="table-row"><span>Cosa / Che</span><span>什么</span><span>Cosa facciamo oggi?</span></div>
+      <div class="table-row"><span>Come</span><span>怎么/怎样</span><span>Come le piacciono?</span></div>
+      <div class="table-row"><span>Quanto</span><span>多少钱</span><span>Quanto costa la manicura?</span></div>
+      <div class="table-row"><span>Perché</span><span>为什么</span><span>Perché sono deboli?</span></div>
+      <div class="table-row"><span>Quando</span><span>什么时候</span><span>Quando il prossimo appuntamento?</span></div>
+      <div class="table-row"><span>Quale</span><span>哪个</span><span>Quale colore preferisce?</span></div>
+      <div class="table-row"><span>Quanto lunghe</span><span>多长</span><span>Quanto lunghe le vuole?</span></div>
+    </div>
+
+    <h2>💬 礼貌表达：条件式</h2>
+    <div class="formula">
+      Vorrei + 动词原形 = 我想...（礼貌）<br>
+      Vorrei + 名词 = 我想要...（礼貌）<br>
+      Vorrebbe + 动词原形 = 您想...（更礼貌）
+    </div>
+    <div class="tip">
+      <div class="tip-title">💡 对比</div>
+      <p>Voglio fare la manicura → 我要做美甲（❌ 太直接）<br>
+      <strong>Vorrei fare la manicura</strong> → 我想做美甲（✅ 礼貌）<br>
+      <strong>Vorrei la ricostruzione in gel</strong> → 我想要凝胶延长（✅ 礼貌）</p>
+    </div>
+
+    <h2>🔗 常用句型模板</h2>
+    <div class="table">
+      <div class="table-header"><span>句型</span><span>意思</span><span>示例</span></div>
+      <div class="table-row"><span>Le consiglio di + 动词</span><span>我建议您...</span><span>Le consiglio di aspettare</span></div>
+      <div class="table-row"><span>Le consiglio + 名词</span><span>我推荐给您</span><span>Le consiglio questo nude</span></div>
+      <div class="table-row"><span>Prima... poi...</span><span>先...再...</span><span>Prima la base, poi il colore</span></div>
+      <div class="table-row"><span>Per finire...</span><span>最后...</span><span>Per finire, il top coat</span></div>
+      <div class="table-row"><span>Si è + 过去分词</span><span>（指甲）...了</span><span>Si è staccata（翘了）</span></div>
+    </div>
+
+    <h2>🏷️ 形容词配合</h2>
+    <div class="table">
+      <div class="table-header"><span>名词</span><span>阴性单数</span><span>阴性复数</span></div>
+      <div class="table-row"><span>unghia (指甲)</span><span>debole / sottile</span><span>deboli / sottili</span></div>
+      <div class="table-row"><span>cuticola (死皮)</span><span>secca / infiammata</span><span>secche / infiammate</span></div>
+      <div class="table-row"><span>forma (形状)</span><span>mandorla / ovale</span><span>mandorle / ovali</span></div>
+    </div>
+    <div class="tip">
+      <div class="tip-title">🧠 小技巧</div>
+      <p>美甲师说最多的词都是 <strong>阴性复数</strong>（因为指甲 le unghie 是阴复）<br>
+      所以形容词都要以 <strong>-e</strong> 结尾：deboli, sottili, lunghe, corte, morbide, dure</p>
+    </div>
+  </div>
+</body>
+</html>
