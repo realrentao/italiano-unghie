@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>颜色大全 · Colori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Outfit', 'Noto Sans SC', sans-serif; background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); min-height: 100vh; color: #2c2c2c; }
+    .back-btn { position: fixed; top: 20px; left: 20px; background: white; border: none; padding: 10px 20px; border-radius: 25px; font-family: inherit; font-size: 14px; color: #666; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-decoration: none; z-index: 100; transition: all 0.3s; }
+    .back-btn:hover { background: #9c27b0; color: white; }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 20px 40px; }
+    h1 { font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: #666; margin-bottom: 30px; }
+    h2 { font-size: 20px; color: #9c27b0; margin: 30px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e1bee7; }
+    .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    .color-item { background: white; border-radius: 12px; padding: 16px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .color-name { font-weight: 600; font-size: 16px; color: #2c2c2c; margin-bottom: 4px; }
+    .color-zh { font-size: 13px; color: #888; }
+    .tech-item { background: white; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; }
+    .tech-it { font-weight: 600; color: #2c2c2c; }
+    .tech-zh { color: #888; font-size: 14px; text-align: right; }
+    .tip { background: #fff3e0; border-radius: 12px; padding: 16px; margin-top: 20px; }
+    .tip-title { font-weight: 600; color: #e65100; margin-bottom: 8px; }
+    .tip p { font-size: 14px; color: #666; line-height: 1.7; }
+    .grammar { background: #e8f5e9; border-radius: 12px; padding: 16px; margin-top: 16px; }
+    .grammar-title { font-weight: 600; color: #2e7d32; margin-bottom: 8px; font-size: 14px; }
+    .grammar p { font-size: 13px; color: #444; line-height: 1.7; }
+    .formula { background: #f3e5f5; border-radius: 8px; padding: 12px; margin-top: 10px; font-family: monospace; font-size: 14px; text-align: center; color: #7b1fa2; }
+    @media (max-width: 600px) { .container { padding: 70px 16px 30px; } .color-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-btn">← 返回主页</a>
+  <div class="container">
+    <h1>🎨 颜色大全</h1>
+    <p class="subtitle">Colori · 基础色系与特殊效果</p>
+
+    <h2>基础色系</h2>
+    <div class="color-grid">
+      <div class="color-item"><div class="color-name">Rosso</div><div class="color-zh">红色</div></div>
+      <div class="color-item"><div class="color-name">Rosa</div><div class="color-zh">粉色</div></div>
+      <div class="color-item"><div class="color-name">Rosa chiaro</div><div class="color-zh">浅粉</div></div>
+      <div class="color-item"><div class="color-name">Rosa scuro</div><div class="color-zh">深粉/玫红</div></div>
+      <div class="color-item"><div class="color-name">Rosa cipria</div><div class="color-zh">豆沙粉/蜜桃粉</div></div>
+      <div class="color-item"><div class="color-name">Nude</div><div class="color-zh">裸色</div></div>
+      <div class="color-item"><div class="color-name">Beige</div><div class="color-zh">米色</div></div>
+      <div class="color-item"><div class="color-name">Marrone chiaro</div><div class="color-zh">浅棕/奶茶色</div></div>
+      <div class="color-item"><div class="color-name">Marrone</div><div class="color-zh">棕色</div></div>
+      <div class="color-item"><div class="color-name">Bordeaux / Borgogna</div><div class="color-zh">酒红色</div></div>
+      <div class="color-item"><div class="color-name">Nero</div><div class="color-zh">黑色</div></div>
+      <div class="color-item"><div class="color-name">Bianco</div><div class="color-zh">白色</div></div>
+      <div class="color-item"><div class="color-name">Grigio</div><div class="color-zh">灰色</div></div>
+      <div class="color-item"><div class="color-name">Grigio chiaro</div><div class="color-zh">浅灰/银灰</div></div>
+      <div class="color-item"><div class="color-name">Blu navy</div><div class="color-zh">深蓝/藏蓝</div></div>
+      <div class="color-item"><div class="color-name">Azzurro</div><div class="color-zh">天蓝色</div></div>
+      <div class="color-item"><div class="color-name">Verde</div><div class="color-zh">绿色</div></div>
+      <div class="color-item"><div class="color-name">Viola</div><div class="color-zh">紫色</div></div>
+      <div class="color-item"><div class="color-name">Lilla</div><div class="color-zh">淡紫/薰衣草紫</div></div>
+      <div class="color-item"><div class="color-name">Giallo</div><div class="color-zh">黄色</div></div>
+      <div class="color-item"><div class="color-name">Arancione</div><div class="color-zh">橙色</div></div>
+      <div class="color-item"><div class="color-name">Oro</div><div class="color-zh">金色</div></div>
+      <div class="color-item"><div class="color-name">Argento</div><div class="color-zh">银色</div></div>
+      <div class="color-item"><div class="color-name">Trasparente</div><div class="color-zh">透明的</div></div>
+    </div>
+
+    <h2>特殊效果</h2>
+    <div class="tech-item"><span class="tech-it">Il gel opaco / Mat</span><span class="tech-zh">哑光</span></div>
+    <div class="tech-item"><span class="tech-it">Il gel lucido</span><span class="tech-zh">亮面</span></div>
+    <div class="tech-item"><span class="tech-it">Il colore shimmer</span><span class="tech-zh">细闪/微闪</span></div>
+    <div class="tech-item"><span class="tech-it">Il glitter</span><span class="tech-zh">粗闪/大闪片</span></div>
+    <div class="tech-item"><span class="tech-it">L'effetto cromato</span><span class="tech-zh">镜面效果</span></div>
+    <div class="tech-item"><span class="tech-it">L'effetto cat eye</span><span class="tech-zh">猫眼效果</span></div>
+    <div class="tech-item"><span class="tech-it">Il gel termico</span><span class="tech-zh">变色甲油</span></div>
+    <div class="tech-item"><span class="tech-it">Il gel magnetico</span><span class="tech-zh">磁吸甲油</span></div>
+    <div class="tech-item"><span class="tech-it">La french</span><span class="tech-zh">法式美甲</span></div>
+    <div class="tech-item"><span class="tech-it">La baby boomer</span><span class="tech-zh">渐变法式/粉色渐变</span></div>
+    <div class="tech-item"><span class="tech-it">L'ombré</span><span class="tech-zh">渐变</span></div>
+    <div class="tech-item"><span class="tech-it">Il marble</span><span class="tech-zh">大理石纹</span></div>
+    <div class="tech-item"><span class="tech-it">Le strass</span><span class="tech-zh">水钻</span></div>
+    <div class="tech-item"><span class="tech-it">I brillantini</span><span class="tech-zh">闪粉/亮片</span></div>
+
+    <div class="grammar">
+      <div class="grammar-title">⚡ 指甲形状大全（美甲师核心词汇！）</div>
+      <div class="formula">Mandorla = 杏仁形（最受欢迎！）<br>Quadrata = 方形 · Quadrata rotonda = 方圆形<br>Ovale = 椭圆形 · A sfera = 圆形/球头<br>A punta / Stiletto = 尖形 · Squadrata = 超方</div>
+      <p style="margin-top:10px;">常用问句：<strong>Che forma desidera? Mandorla, quadrata o ovale?</strong><br>您想要什么形状？杏仁形、方形还是椭圆？</p>
+    </div>
+
+    <div class="tip">
+      <div class="tip-title">💡 怎么跟顾客解释颜色和效果</div>
+      <p>• <strong>Effetto opaco</strong> — 哑光效果，时尚不反光<br>
+      • <strong>Effetto cromato</strong> — 镜面效果，像镜子一样亮<br>
+      • <strong>Effetto cat eye</strong> — 猫眼效果，会随光线变化<br>
+      • <strong>Baby boomer</strong> — 粉色渐变法式，意大利女性最爱<br>
+      • <strong>Shimmer</strong> — 细闪，低调有光泽</p>
+    </div>
+  </div>
+</body>
+</html>
