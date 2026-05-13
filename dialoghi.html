@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>场景精华对话 · Dialoghi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body { font-family: 'Outfit', 'Noto Sans SC', sans-serif; background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); min-height: 100vh; color: #2c2c2c; line-height: 1.7; }
+    .back-btn { position: fixed; top: 20px; left: 20px; background: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 14px; color: #666; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-decoration: none; z-index: 100; transition: all 0.3s; display: inline-block; }
+    .back-btn:hover { background: #ff5722; color: white; }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 20px 40px; }
+    h1 { font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: #666; margin-bottom: 30px; }
+    .scene { background: white; border-radius: 16px; padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .scene h2 { color: #ff5722; margin-bottom: 16px; font-size: 18px; }
+    .dlg { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed #eee; }
+    .dlg:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .role { font-size: 12px; font-weight: 600; color: #888; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+    .role.stylist { color: #e91e63; }
+    .role.client { color: #2196f3; }
+    .it { font-weight: 600; color: #2c2c2c; margin-bottom: 2px; }
+    .zh { font-size: 14px; color: #666; }
+    .gram { background: #fff3e0; border-radius: 8px; padding: 12px; margin-top: 12px; font-size: 14px; color: #e65100; }
+    @media (max-width: 600px) { .container { padding: 70px 16px 30px; } }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-btn">← 返回主页</a>
+  <div class="container">
+    <h1>💬 场景精华对话</h1>
+    <p class="subtitle">Dialoghi · 13个最常用场景</p>
+
+    <!-- 场景一 -->
+    <div class="scene">
+      <h2>📞 场景一：电话预约</h2>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Pronto, buongiorno! Vorrei prendere un appuntamento.</div>
+        <div class="zh">您好！我想预约</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Buongiorno! Per quando?</div>
+        <div class="zh">您好！想约什么时候？</div>
+        <div class="gram">⚡ Per quando? = 约什么时候？</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Per venerdì pomeriggio, vorrei la manicura con gel.</div>
+        <div class="zh">周五下午，我想做凝胶美甲</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Venerdì... alle 15:00 va bene?</div>
+        <div class="zh">周五下午3点可以吗？</div>
+        <div class="gram">⚡ Va bene? = 可以吗？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">35 euro con gel, 25 senza. Quanto costa la manicura con gel?</div>
+        <div class="zh">凝胶35欧，普通25欧</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Va bene, a venerdì!</div>
+        <div class="zh">好的，周五见！</div>
+      </div>
+    </div>
+
+    <!-- 场景二 -->
+    <div class="scene">
+      <h2>🏪 场景二：顾客到店 + 判断甲质</h2>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Buongiorno! Ho un appuntamento per la manicura alle 15.</div>
+        <div class="zh">您好！我约了3点做美甲</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Buongiorno! Si accomodi!</div>
+        <div class="zh">您好！请坐！</div>
+        <div class="gram">⚡ Si accomodi = 请坐（礼貌命令式）</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Allora, cosa facciamo oggi?</div>
+        <div class="zh">那今天做什么？</div>
+        <div class="gram">⚡ Allora = 那么/那（开场白神词）</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Perfetto! Mi faccia vedere le mani.</div>
+        <div class="zh">完美！让我看看您的手</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le Sue unghie sono un po' deboli e sottili.</div>
+        <div class="zh">您的指甲有点脆、有点薄</div>
+        <div class="gram">⚡ Le Sue = 您的（尊称所有格）</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Sì, si rompono facilmente.</div>
+        <div class="zh">是的，很容易断</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Con la ricostruzione in gel durano di più.</div>
+        <div class="zh">做凝胶延长会更持久</div>
+        <div class="gram">⚡ Durare di più = 持续更久</div>
+      </div>
+    </div>
+
+    <!-- 场景三 -->
+    <div class="scene">
+      <h2>💅 场景三：顾客要做延长甲</h2>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Vorrei allungare le unghie. Mi piace la forma mandorla.</div>
+        <div class="zh">我想延长指甲。我喜欢杏仁形</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le Sue unghie naturali sono corte, faremo la ricostruzione.</div>
+        <div class="zh">您的本甲很短，我们做延长</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Prima applichiamo la base, poi il gel costruttore.</div>
+        <div class="zh">先打底，再上建构胶</div>
+        <div class="gram">⚡ Prima... poi... = 先...再...</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Quanto lunghe le vuole? Fino a qui?</div>
+        <div class="zh">要多长？到这儿？（用手比划）</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Ottimo! Ora applichiamo il colore.</div>
+        <div class="zh">太好了！现在上色</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le consiglio un colore che sta bene con la Sua pelle.</div>
+        <div class="zh">我推荐一个适合您肤色的颜色</div>
+        <div class="gram">⚡ Le consiglio = 我建议您</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Vuole aggiungere un nail art? Con qualche strass o decorazione?</div>
+        <div class="zh">要加彩绘吗？加些水钻或装饰？</div>
+      </div>
+    </div>
+
+    <!-- 场景四 -->
+    <div class="scene">
+      <h2>🎨 场景四：选颜色 + 确认效果</h2>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Che colore ha in mente?</div>
+        <div class="zh">您想要什么颜色？</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Non lo so... qualcosa di naturale.</div>
+        <div class="zh">我不知道...自然一点的</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le consiglio questo nude o questo rosa cipria.</div>
+        <div class="zh">我推荐这款裸色或这款豆沙粉</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Il rosa cipria mi piace! Mi sta bene?</div>
+        <div class="zh">豆沙粉不错！适合我吗？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Sì, Le sta benissimo con la Sua carnagione!</div>
+        <div class="zh">是的，跟您的肤色超级配！</div>
+        <div class="gram">⚡ Le sta benissimo = 超级适合您（夸奖用）</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Vorrei anche la french sopra.</div>
+        <div class="zh">我还想做法式在上面</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Perfetto! French bianca o colorata? E top lucido o opaco?</div>
+        <div class="zh">完美！白色法式还是彩色法式？亮面封层还是哑光？</div>
+      </div>
+    </div>
+
+    <!-- 场景五 -->
+    <div class="scene">
+      <h2>💅 场景五：做半永久甲油（Semipermanente）</h2>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Allora, cominciamo! Prima leviamo lo smalto vecchio.</div>
+        <div class="zh">那开始吧！先卸掉旧甲油</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le spingo le cuticole con il pusher.</div>
+        <div class="zh">我用推皮棒推死皮</div>
+        <div class="gram">⚡ spingere = 推 / pusher = 推皮棒</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le taglio un po' le cuticole, va bene?</div>
+        <div class="zh">帮您剪一点死皮，可以吗？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Ora applichiamo la base, poi il colore.</div>
+        <div class="zh">现在打底，然后上色</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Mettiamo sotto la lampada per 60 secondi.</div>
+        <div class="zh">放进灯里烤60秒</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Per finire, il top coat. Così dura di più!</div>
+        <div class="zh">最后封层。这样更持久！</div>
+        <div class="gram">⚡ Prima... poi... per finire... = 先...再...最后...</div>
+      </div>
+    </div>
+
+    <!-- 场景六 -->
+    <div class="scene">
+      <h2>😤 场景六：甲质太差，不能做</h2>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le Sue unghie sono troppo rovinate.</div>
+        <div class="zh">您的指甲受损太严重</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Eh? Perché? Non si può fare niente?</div>
+        <div class="zh">啊？为什么？一点办法都没有？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Mi dispiace. Non posso fare la ricostruzione adesso.</div>
+        <div class="zh">抱歉。现在不能做延长</div>
+        <div class="gram">⚡ Non posso = 我不能</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le consiglio di aspettare almeno due settimane.</div>
+        <div class="zh">我建议您至少等两周</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Possiamo fare una manicure curativa semplice.</div>
+        <div class="zh">我们可以做一个简单的护理型修甲</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Con un trattamento adatto per unghie fragili.</div>
+        <div class="zh">加一个适合脆甲的护理</div>
+        <div class="gram">⚡ Adatto per = 适合...的</div>
+      </div>
+    </div>
+
+    <!-- 场景七 -->
+    <div class="scene">
+      <h2>⚠️ 场景七：翘甲 / 过敏问题</h2>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">L'unghia si è staccata! Che faccio?</div>
+        <div class="zh">指甲翘起来了！怎么办？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Si è staccata da quanto?</div>
+        <div class="zh">翘起来多久了？</div>
+        <div class="gram">⚡ Si è staccata = 翘起/脱落（自反动词过去时）</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">È importante non strappare. Venga a rimuoverla.</div>
+        <div class="zh">千万别硬撕。来我这里卸掉</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Ho un po' di rossore, è un'allergia?</div>
+        <div class="zh">有点红，是过敏吗？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Potrebbe essere una reazione al gel. Ha un'allergia al gel?</div>
+        <div class="zh">可能是对甲油胶的反应。您对甲油胶过敏吗？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Posso provare con un gel ipoallergenico la prossima volta.</div>
+        <div class="zh">下次可以试试低过敏的甲油胶</div>
+      </div>
+    </div>
+
+    <!-- 场景八 -->
+    <div class="scene">
+      <h2>🦶 场景八：足部美甲（Pedicura）</h2>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Buongiorno! Vorrei fare la pedicura.</div>
+        <div class="zh">您好！我想做足部美甲</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Buongiorno! Prima il pediluvio, poi vediamo.</div>
+        <div class="zh">您好！先泡脚，然后看看</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Ha un po' di duroni. Leviamo le callosità, va bene?</div>
+        <div class="zh">有点老茧。去一下角质，可以吗？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Applichiamo il callifugo e usiamo la pietra pomice.</div>
+        <div class="zh">上点去茧液，用磨脚石处理</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Che colore per le unghie dei piedi?</div>
+        <div class="zh">脚趾甲选什么颜色？</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Un rosso classico, per favore.</div>
+        <div class="zh">经典红色，谢谢</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Con il massaggio ai piedi per finire?</div>
+        <div class="zh">最后加个足部按摩？</div>
+      </div>
+    </div>
+
+    <!-- 场景九 -->
+    <div class="scene">
+      <h2>🧴 场景九：推荐产品</h2>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Ecco fatto! Le piace il risultato?</div>
+        <div class="zh">好了！您满意吗？</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Sì, bellissime! Che prodotti usa per la manutenzione?</div>
+        <div class="zh">太美了！您用什么产品保养？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le consiglio quest'olio per cuticole. Costa 12 euro.</div>
+        <div class="zh">我推荐这款死皮油。12欧</div>
+        <div class="gram">⚡ Le consiglio + 名词 = 我推荐给您</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">E questa crema per le mani, molto nutriente.</div>
+        <div class="zh">还有这款护手霜，很滋润</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">In omaggio, le do una lima gratis!</div>
+        <div class="zh">赠品，送您一把锉！</div>
+      </div>
+    </div>
+
+    <!-- 场景十 -->
+    <div class="scene">
+      <h2>✨ 场景十：美甲艺术（Nail Art）</h2>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Vorrei un nail art, ma semplice.</div>
+        <div class="zh">我想做彩绘，简单点的</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Che tipo? Fiori, brillantini, o french?</div>
+        <div class="zh">什么类型？花朵、闪粉还是法式？</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Vorrei dei fiori piccoli, tipo come le foto che ho visto.</div>
+        <div class="zh">我想要小花，像我看到的照片那样</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Con qualche strass al centro? Sarebbe molto elegante.</div>
+        <div class="zh">中间加几颗水钻？会很优雅</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Sì, perfetto!</div>
+        <div class="zh">好的，完美！</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Il nail art costa 10 euro in più. Va bene?</div>
+        <div class="zh">彩绘加10欧。可以吗？</div>
+        <div class="gram">⚡ In più = 另外/额外</div>
+      </div>
+    </div>
+
+    <!-- 场景十一 -->
+    <div class="scene">
+      <h2>😤 场景十一：危机处理 — 顾客不满意</h2>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Non mi piace... è troppo lungo.</div>
+        <div class="zh">我不喜欢...太长了</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Mi dispiace tanto. Cosa possiamo fare?</div>
+        <div class="zh">非常抱歉。我们能做什么？</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Non lo so... le vorrei più corte.</div>
+        <div class="zh">我不知道...我想要短一点</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Possiamo accorciare un po'. Un momento.</div>
+        <div class="zh">我们可以剪短一点。等一下</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Le piace di più così?</div>
+        <div class="zh">您更喜欢这样吗？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Si figuri! L'importante è che Lei sia contenta.</div>
+        <div class="zh">没关系！重要的是您满意</div>
+        <div class="gram">⚡ 危机4步法：道歉→询问→补救→确认</div>
+      </div>
+    </div>
+
+    <!-- 场景十二 -->
+    <div class="scene">
+      <h2>💬 场景十二：闲聊（意大利人把美容店当社交场所！）</h2>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Che tempo fa oggi! Fa bel tempo, vero?</div>
+        <div class="zh">今天天气真好！对吧？</div>
+        <div class="gram">⚡ Che tempo fa? = 天气怎么样？</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Sì, c'è il sole! Il weekend vado al mare.</div>
+        <div class="zh">是的，有太阳！周末我去海边</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Che bello! Divertiti!</div>
+        <div class="zh">太好了！玩得开心！</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Sei molto brava! Mi piace molto il tuo lavoro.</div>
+        <div class="zh">你手艺很好！我很喜欢</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Grazie! Ha delle belle mani, Le stanno benissimo!</div>
+        <div class="zh">谢谢！您的手很好看，超级适合！</div>
+        <div class="gram">⚡ 夸顾客永远没错！</div>
+      </div>
+    </div>
+
+    <!-- 场景十三 -->
+    <div class="scene">
+      <h2>💳 场景十三：结账 + 约下次</h2>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Ecco fatto! Si guardi allo specchio.</div>
+        <div class="zh">好了！照照镜子看看</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Perfetto! Quanto le devo?</div>
+        <div class="zh">完美！多少钱？</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Il totale è 45 euro. Accettiamo carta e contanti.</div>
+        <div class="zh">一共45欧。刷卡和现金都可以</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Ecco lo scontrino. Una firma qui, per favore.</div>
+        <div class="zh">这是小票。请在这里签名</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Quando vuole il prossimo appuntamento?</div>
+        <div class="zh">下次想约什么时候？</div>
+        <div class="gram">⚡ Il prossimo appuntamento = 下次预约</div>
+      </div>
+      <div class="dlg">
+        <div class="role client">👩 顾客</div>
+        <div class="it">Tra tre settimane, per il refill.</div>
+        <div class="zh">三周后，来补甲</div>
+      </div>
+      <div class="dlg">
+        <div class="role stylist">💅 美甲师</div>
+        <div class="it">Grazie a Lei! Buona giornata! A presto!</div>
+        <div class="zh">谢谢您！祝您愉快！下次见！</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
