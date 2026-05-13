@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>意大利语美甲专题 · Unghie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Outfit', 'Noto Sans SC', sans-serif;
+      background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+      min-height: 100vh;
+      color: #2c2c2c;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 20px 60px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #e91e63, #c2185b);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 40px;
+      box-shadow: 0 8px 30px rgba(233, 30, 99, 0.3);
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #e91e63, #c2185b);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: #2c2c2c;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #888;
+    }
+
+    .intro {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .intro p {
+      color: #666;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transition: all 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+
+    .card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+
+    .card-text h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #2c2c2c;
+      margin-bottom: 4px;
+    }
+
+    .card-text p {
+      font-size: 13px;
+      color: #999;
+    }
+
+    .card-arrow {
+      margin-left: auto;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #f5f4f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+      font-size: 14px;
+      flex-shrink: 0;
+      transition: all 0.3s;
+    }
+
+    .card:hover .card-arrow {
+      background: #e91e63;
+      color: white;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .footer a {
+      color: #e91e63;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .footer p {
+      font-size: 12px;
+      color: #bbb;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 40px 16px 40px; }
+      h1 { font-size: 26px; }
+      .card { padding: 20px; }
+      .card-icon { width: 48px; height: 48px; font-size: 24px; }
+      .card-text h2 { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">💅</div>
+      <div class="badge">意大利语美甲专题</div>
+      <h1>意大利语美甲专题</h1>
+      <p class="subtitle">Impara l'italiano dell'estetista unghie</p>
+    </div>
+
+    <div class="intro">
+      <p>📖 <strong>使用指南</strong>：本手册包含核心词汇、场景对话、语法速成和万能句型。先学"听懂顾客说什么"，再学"自己该怎么回"。专为在意大利的华人美甲师打造。</p>
+    </div>
+
+    <div class="cards">
+      <a href="vocabolario.html" class="card">
+        <div class="card-icon" style="background: linear-gradient(135deg, #e91e63, #c2185b);">📚</div>
+        <div class="card-text">
+          <h2>核心词汇速查</h2>
+          <p>人物场所 · 甲质描述 · 足部专用</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="colori.html" class="card">
+        <div class="card-icon" style="background: linear-gradient(135deg, #9c27b0, #7b1fa2);">🎨</div>
+        <div class="card-text">
+          <h2>颜色大全</h2>
+          <p>基础色系 · 特殊效果 · 指甲形状</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="nail-art.html" class="card">
+        <div class="card-icon" style="background: linear-gradient(135deg, #673ab7, #512da8);">✨</div>
+        <div class="card-text">
+          <h2>美甲艺术与服务</h2>
+          <p>延长甲 · 半永久 · 法式 · 足部美甲</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="prodotti.html" class="card">
+        <div class="card-icon" style="background: linear-gradient(135deg, #2196f3, #1976d2);">🧴</div>
+        <div class="card-text">
+          <h2>产品与工具</h2>
+          <p>甲油凝胶 · 美甲工具 · 护理产品</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="dialoghi.html" class="card">
+        <div class="card-icon" style="background: linear-gradient(135deg, #ff5722, #e64a19);">💬</div>
+        <div class="card-text">
+          <h2>场景精华对话</h2>
+          <p>电话预约 · 判断甲质 · 选色做甲 · 危机处理 · 结账告别</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="grammatica.html" class="card">
+        <div class="card-icon" style="background: linear-gradient(135deg, #009688, #00796b);">📝</div>
+        <div class="card-text">
+          <h2>语法速成</h2>
+          <p>动词变位 · 肯定否定 · 疑问句型 · 形容词配合</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="frasi.html" class="card">
+        <div class="card-icon" style="background: linear-gradient(135deg, #ff9800, #f57c00);">⚡</div>
+        <div class="card-text">
+          <h2>万能句型</h2>
+          <p>进门服务 · 给出建议 · 危机处理 · 结账送客</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a href="sommario.html" class="card">
+        <div class="card-icon" style="background: linear-gradient(135deg, #4caf50, #388e3c);">🏆</div>
+        <div class="card-text">
+          <h2>实战小抄</h2>
+          <p>三连招速记 · 危机处理 · 闲聊万能句</p>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+    </div>
+
+    <div class="footer">
+      <a href="https://github.com/realrentao/italiano-unghie" target="_blank">GitHub · 源码仓库</a>
+      <p>抖音博主 @涛子办事处</p>
+    </div>
+  </div>
+</body>
+</html>
