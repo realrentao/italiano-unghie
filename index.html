@@ -297,6 +297,16 @@ function getAudio(aid) {
       if (currentBtn && currentBtn.dataset.audioId === aid) { currentBtn.textContent = '▶'; currentBtn.classList.remove('playing'); }
       if (currentAudio && currentAudio.dataset.audioId === aid) { currentAudio = null; currentBtn = null; }
     });
+    a.addEventListener('play', function() {
+      // interrupt: any audio starting stops all others
+      Object.keys(audioCache).forEach(function(k) {
+        if (k === aid) return;
+        var o = audioCache[k];
+        if (o && !o.paused) { try { o.pause(); o.currentTime = 0; } catch (e) {} }
+        var ib = document.querySelectorAll('[data-audio-id="' + k + '"]');
+        Array.prototype.forEach.call(ib, function(b) { b.textContent = '▶'; if (b.classList) b.classList.remove('playing'); });
+      });
+    });
     audioCache[aid] = a;
   }
   return audioCache[aid];
