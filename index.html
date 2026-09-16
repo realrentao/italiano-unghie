@@ -301,14 +301,60 @@ function getAudio(aid) {
   }
   return audioCache[aid];
 }
-// Preload the active section's audio right after it renders, so the first tap is instant.
+// Efficient audio prefetch: only warm audio for entries near the viewport, plus on hover/tap.
+// Replaces the old behavior that eagerly loaded the ENTIRE active section (40-60 parallel requests).
+const _PREFETCH_MAX = 6;
+let _prefetchQueue = [];
+let _prefetchRunning = 0;
+let _audioObserver = null;
+let _hoverBound = false;
+function _enqueueAudio(aid) {
+  if (!aid) return;
+  if (window.__audioWarmed && window.__audioWarmed[aid]) return;
+  if (_prefetchQueue.indexOf(aid) !== -1) return;
+  _prefetchQueue.push(aid);
+  _pumpPrefetch();
+}
+function _pumpPrefetch() {
+  while (_prefetchRunning < _PREFETCH_MAX && _prefetchQueue.length) {
+    const aid = _prefetchQueue.shift();
+    const a = getAudio(aid);
+    if (!a) continue;
+    if (a.__warmed) continue;
+    _prefetchRunning++;
+    (function(audio){
+      const done = function(){ audio.__warmed = true; if (!window.__audioWarmed) window.__audioWarmed = {}; window.__audioWarmed[aid] = true; _prefetchRunning--; _pumpPrefetch(); };
+      audio.addEventListener('canplay', done, { once: true });
+      audio.addEventListener('error', function(){ _prefetchRunning--; _pumpPrefetch(); }, { once: true });
+      try { audio.load(); } catch (err) { _prefetchRunning--; _pumpPrefetch(); }
+    })(a);
+  }
+}
 function prefetchSectionAudio() {
-  const sec = SECTIONS[activeSection];
-  if (!sec) return;
-  const ids = [];
-  (sec.subsections || []).forEach(s => s.entries.forEach(e => { if (hasAudio(e)) ids.push(e.id); }));
-  (sec.entries || []).forEach(e => { if (hasAudio(e)) ids.push(e.id); });
-  ids.forEach(function(id) { try { getAudio(id).load(); } catch (e) {} });
+  if ('IntersectionObserver' in window) {
+    if (_audioObserver) _audioObserver.disconnect();
+    _audioObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(en) {
+        if (en.isIntersecting) {
+          _enqueueAudio(en.target.getAttribute('data-audio-id'));
+          _audioObserver.unobserve(en.target);
+        }
+      });
+    }, { rootMargin: '300px' });
+    document.querySelectorAll('.play-btn[data-audio-id]').forEach(function(btn){ _audioObserver.observe(btn); });
+  } else {
+    const sec = SECTIONS[activeSection];
+    if (!sec) return;
+    const ids = [];
+    (sec.subsections || []).forEach(s => s.entries.forEach(e => { if (hasAudio(e)) ids.push(e.id); }));
+    (sec.entries || []).forEach(e => { if (hasAudio(e)) ids.push(e.id); });
+    ids.slice(0, 12).forEach(function(id){ try { getAudio(id).load(); } catch (e) {} });
+  }
+  if (!_hoverBound) {
+    _hoverBound = true;
+    document.addEventListener('pointerover', function(e){ var b = e.target.closest && e.target.closest('.play-btn[data-audio-id]'); if (b) _enqueueAudio(b.getAttribute('data-audio-id')); }, true);
+    document.addEventListener('touchstart', function(e){ var b = e.target.closest && e.target.closest('.play-btn[data-audio-id]'); if (b) _enqueueAudio(b.getAttribute('data-audio-id')); }, true);
+  }
 }
 function playAudio(btn) {
   const aid = btn.dataset.audioId;
@@ -412,6 +458,13 @@ buildNavLabels();
 renderTabs();
 renderNavDropdown();
 switchSection(1);
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').catch(function(e){ console.warn('SW register failed', e); });
+  });
+}
 </script>
 </body>
 </html>
