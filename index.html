@@ -285,7 +285,7 @@ function renderEntry(e) {
 
 // Stable version param: lets the browser cache audio across replays/sessions.
 // Bump this constant when you replace any audio file, so clients re-fetch.
-const AUDIO_VER = '1';
+const AUDIO_VER = '2';
 function audioUrl(aid) { return 'audio/' + aid + '.mp3?v=' + AUDIO_VER; }
 function getAudio(aid) {
   if (!audioCache[aid]) {
@@ -296,16 +296,6 @@ function getAudio(aid) {
     a.addEventListener('ended', function() {
       if (currentBtn && currentBtn.dataset.audioId === aid) { currentBtn.textContent = '▶'; currentBtn.classList.remove('playing'); }
       if (currentAudio && currentAudio.dataset.audioId === aid) { currentAudio = null; currentBtn = null; }
-    });
-    a.addEventListener('play', function() {
-      // interrupt: any audio starting stops all others
-      Object.keys(audioCache).forEach(function(k) {
-        if (k === aid) return;
-        var o = audioCache[k];
-        if (o && !o.paused) { try { o.pause(); o.currentTime = 0; } catch (e) {} }
-        var ib = document.querySelectorAll('[data-audio-id="' + k + '"]');
-        Array.prototype.forEach.call(ib, function(b) { b.textContent = '▶'; if (b.classList) b.classList.remove('playing'); });
-      });
     });
     audioCache[aid] = a;
   }
@@ -476,5 +466,24 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
+<style>
+/* 正文内容字号放大 50% (2026-09-17) */
+.entry-card .entry-ita { font-size: 22.5px; }
+.entry-card .entry-chn { font-size: 21px; }
+.entry-card .entry-extra { font-size: 18px; }
+.entry-card .entry-role { font-size: 18px; }
+.section-title { font-size: 33px; }
+.section-desc { font-size: 21px; }
+.subsection-title { font-size: 25.5px; }
+@media (max-width: 768px) {
+  .entry-card .entry-ita { font-size: 21px; }
+  .entry-card .entry-chn { font-size: 19.5px; }
+  .entry-card .entry-extra { font-size: 18px; }
+  .entry-card .entry-role { font-size: 18px; }
+  .section-title { font-size: 28.5px; }
+  .section-desc { font-size: 21px; }
+  .subsection-title { font-size: 22.5px; }
+}
+</style>
 </body>
 </html>
