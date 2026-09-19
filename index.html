@@ -162,7 +162,7 @@ const sectionColors = ['var(--green)','var(--blue)','var(--gold)','var(--purple)
 function escHtml(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 function renderTitle(title) { return title.replace(/🇮🇹/g, '<span class="flag-it" style="width:22px;height:15px;display:inline-block;vertical-align:middle;"></span>'); }
 function hasChinese(t) { for (let c of t) { if (c >= '\u4e00' && c <= '\u9fff') return true; } return false; }
-function hasAudio(e) { return !hasChinese(e.ita) && e.ita.trim().length > 1; }
+function hasAudio(e) { return e.id && !hasChinese(e.ita) && e.ita.trim().length > 1; }
 
 function renderTabs() {
   const c = document.getElementById('tabBarInner');
